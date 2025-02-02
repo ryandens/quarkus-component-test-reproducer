@@ -1,6 +1,5 @@
 package com.ryandens;
 
-import com.ryandens.example.ExampleConfig;
 import com.ryandens.example.ExampleService;
 import com.ryandens.example.ExampleStrategy;
 import io.quarkus.test.component.QuarkusComponentTest;
