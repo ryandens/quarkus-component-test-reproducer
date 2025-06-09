@@ -7,7 +7,8 @@ import io.quarkus.test.junit.QuarkusTestProfile;
 import io.quarkus.test.junit.TestProfile;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.io.TempDir;
+import java.nio.file.Path;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -19,6 +20,8 @@ final class ExampleServiceQuarkusTest {
     @Inject
     ExampleService exampleService;
 
+    @TempDir
+    static Path tmp;
 
     @Test
     void name() {
@@ -29,7 +32,8 @@ final class ExampleServiceQuarkusTest {
         @Override
         public Map<String, String> getConfigOverrides() {
             return Map.of(
-                    "com.ryandens.strategy", "TWO"
+                    "com.ryandens.strategy", "TWO",
+                    "com.ryandens.tmp", tmp.toString()
             );
         }
     }
