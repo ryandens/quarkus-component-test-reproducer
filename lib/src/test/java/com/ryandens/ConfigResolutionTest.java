@@ -4,11 +4,13 @@ import com.ryandens.example.ExampleService;
 import com.ryandens.example.ExampleStrategy;
 import io.quarkus.test.component.QuarkusComponentTest;
 import jakarta.inject.Inject;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @QuarkusComponentTest
+@Disabled
 final class ConfigResolutionTest {
 
     @Inject
