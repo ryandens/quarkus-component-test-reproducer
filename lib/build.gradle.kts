@@ -18,7 +18,7 @@ repositories {
 dependencies {
     implementation(platform(libs.quarkus.bom))
     implementation("io.quarkus:quarkus-arc")
-    implementation("io.smallrye:smallrye-config")
+    implementation("io.smallrye.config:smallrye-config")
     implementation("jakarta.enterprise:jakarta.enterprise.cdi-api")
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)

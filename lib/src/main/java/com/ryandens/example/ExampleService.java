@@ -7,7 +7,7 @@ import jakarta.inject.Inject;
 public class ExampleService {
 
     @Inject
-    private ExampleConfig exampleConfig;
+    ExampleConfig exampleConfig;
 
     public ExampleStrategy getStrategy() {
         return exampleConfig.strategy();
