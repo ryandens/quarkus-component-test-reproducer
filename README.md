@@ -3,5 +3,5 @@
 The introduction of a QuarkusTest causes the QuarkusComponentTest to fail.
 
 
-1. Build scan without the quarkus test: https://scans.gradle.com/s/lob2novma3rom/tests/overview
-2. Build scan with the quarkus test: https://scans.gradle.com/s/wy5jexvami6nw/tests/overview
+1. Build scan without the quarkus test: https://gradle.com/s/uneb6qj77mpjw
+2. Build scan with the quarkus test: https://gradle.com/s/jd3u5b2xbh5sc
